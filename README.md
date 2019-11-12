@@ -1,7 +1,7 @@
 Nyan Cat
 ========
 
-[DEMO HERE](http://cristurm.github.io/nyan-cat/)
+[DEMO HERE](http://reatlat.github.io/nyan-cat/)
 
 Nyan Cat made with HTML5+CSS3 (and JavaScript :T).
 
@@ -32,5 +32,4 @@ Credits:
 
 - [GIF image used as a reference to recreate each frame from prguitarman](http://www.prguitarman.com/?id=348)
 - [Song downloaded from momolabo.lolipop.jp](http://momolabo.lolipop.jp/nyancatsong/Nyan/Nyanyanyanyanyanyanya%21.html)
-- [Octicons](https://octicons.github.com/)
-- [favicon.cc](https://www.favicon.cc/?action=icon&file_id=422699)
+- [Fork from Cristina Sturm](https://github.com/cristurm/nyan-cat)
