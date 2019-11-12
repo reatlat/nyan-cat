@@ -1,5 +1,3 @@
-console.log('Nyan!')
-
 function cycleFrames (_nyanCat, _currentFrame) {
 	_nyanCat.classList = []
 	_nyanCat.classList.add(`frame${_currentFrame}`)
@@ -19,6 +17,8 @@ function replicateSparks (_sparksRow) {
 (function () {
 	let nyanCat = document.getElementById('nyan-cat')
 	let currentFrame = 1
+	let playBtn = document.getElementById('play-music')
+	let nyamMusic = document.getElementById('nyam-music')
 
 	replicateSparks(document.getElementsByClassName('sparks-combo')[0])
 
@@ -26,4 +26,9 @@ function replicateSparks (_sparksRow) {
 		currentFrame = (currentFrame % 6) + 1
 		cycleFrames(nyanCat, currentFrame)
 	}, 70)
+
+	playBtn.onclick = function () {
+		nyamMusic.play()
+		playBtn.remove()
+	}
 })()
