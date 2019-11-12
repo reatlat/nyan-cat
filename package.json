@@ -1,29 +1,55 @@
 {
   "name": "nyan-cat",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Nyan!",
   "main": "index.html",
   "scripts": {
-    "less": "lessc less/nyan.less css/nyan.css"
+    "build": "npx gulp build-assets",
+    "watch": "npx gulp watch-assets",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cristurm/nyan-cat.git"
+    "url": "git+https://github.com/reatlat/nyan-cat.git"
   },
   "keywords": [
     "nyan-cat",
     "css3",
     "html5",
     "audio",
-    "animation"
+    "animation",
+    "cristurm"
   ],
-  "author": "Cristina Sturm (cristurm90@gmail.com)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cristurm/nyan-cat/issues"
+  "author": {
+    "name": "Alex Zappa",
+    "email": "reatlat@gmail.com"
   },
-  "homepage": "https://github.com/cristurm/nyan-cat#readme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reatlat/nyan-cat/issues"
+  },
+  "homepage": "https://github.com/reatlat/nyan-cat#readme",
   "devDependencies": {
-    "less": "^3.10.3"
+    "@babel/core": "^7.6.4",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-es2015-object-super": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.5.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-load-plugins": "^2.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-strip-css-comments": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
   }
 }
