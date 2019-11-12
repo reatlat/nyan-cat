@@ -1,0 +1,76 @@
+@import "normalize";
+
+$border-color: white;
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #036;
+  overflow: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+@import "nyan",
+"nyan-sparks",
+"nyan-rainbow",
+"nyan-head",
+"nyan-paws",
+"nyan-tail";
+
+
+.play-music {
+  .play-music__inner {
+
+    .icon-play {
+      cursor: pointer;
+      position: absolute;
+      z-index: 100500;
+      width: 100px;
+      height: 100px;
+      color: white;
+      top: 20px;
+      left: 20px;
+
+      svg {
+        width: 100px;
+        height: 100px;
+        stroke-width: .5px;
+        transition: all .3s ease;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        border-radius: 50px;
+        width: 86px;
+        height: 86px;
+        margin: 7px;
+      }
+
+      &:hover {
+        &:before {
+          background: rgba(black, .4);
+        }
+      }
+    }
+  }
+}

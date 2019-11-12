@@ -13,22 +13,22 @@
 	height: 100%;
 	background-color: transparent;
 	background: linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x,
-							linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x,
-							linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x,
-							linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x;
+	linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x,
+	linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x,
+	linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x;
 
 	&:before {
 		background: linear-gradient(to right, white 0px, white 5px, transparent 5px, transparent 400px) repeat-x,
-								linear-gradient(to right, white 0px, white 5px, transparent 5px, transparent 400px) repeat-x,
-								linear-gradient(to right, white 0px, white 5px, transparent 5px, transparent 400px) repeat-x,
-								linear-gradient(to right, white 0px, white 5px, transparent 5px, transparent 400px) repeat-x;
+		linear-gradient(to right, white 0px, white 5px, transparent 5px, transparent 400px) repeat-x,
+		linear-gradient(to right, white 0px, white 5px, transparent 5px, transparent 400px) repeat-x,
+		linear-gradient(to right, white 0px, white 5px, transparent 5px, transparent 400px) repeat-x;
 	};
 
 	&:after {
 		background: linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x,
-								linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x,
-								linear-gradient(to right, white 0px, white 11px, transparent 11px, transparent 400px) repeat-x,
-								linear-gradient(to right, white 0px, white 11px, transparent 11px, transparent 400px) repeat-x;
+		linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x,
+		linear-gradient(to right, white 0px, white 11px, transparent 11px, transparent 400px) repeat-x,
+		linear-gradient(to right, white 0px, white 11px, transparent 11px, transparent 400px) repeat-x;
 	};
 
 	&:before, &:after {
@@ -81,7 +81,7 @@
 	}
 }
 
-.hidden-background-image() {
+@mixin hidden-background-image(){
 	background-size: 0 0, 0 0, 0 0, 0 0; background-position: 0 0, 0 0, 0 0, 0 0;
 }
 
@@ -128,29 +128,29 @@
 }
 
 @keyframes sparkly-before {
-	0% { .hidden-background-image(); }
-	16% { .hidden-background-image(); }
+	0% { @include hidden-background-image(); }
+	16% { @include hidden-background-image(); }
 
 	33% {
 		background-size: 400px 5px, 400px 5px, 400px 5px, 400px 5px;
 		background-position: 6px 6px, 29px 6px, 29px 29px, 6px 29px;
 	}
 
-	50% { .hidden-background-image(); }
-	66% { .hidden-background-image(); }
+	50% { @include hidden-background-image(); }
+	66% { @include hidden-background-image(); }
 
 	83% {
 		background-size: 0 0, 0 0, 400px 5px, 400px 5px;
 		background-position: 0 0, 0 0, 17px 12px, 17px 22px;
 	}
 
-	100% { .hidden-background-image(); }
+	100% { @include hidden-background-image(); }
 }
 
 @keyframes sparkly-after {
-	0% { .hidden-background-image(); }
-	16% { .hidden-background-image(); }
-	33% { .hidden-background-image(); }
+	0% { @include hidden-background-image(); }
+	16% { @include hidden-background-image(); }
+	33% { @include hidden-background-image(); }
 
 	50% {
 		background-size: 400px 11px, 400px 11px, 400px 6px, 400px 6px;
@@ -162,6 +162,6 @@
 		background-position: 0 0, 0 0, 6px 17px, 23px 17px;
 	}
 
-	83% { .hidden-background-image(); }
-	100% { .hidden-background-image(); }
+	83% { @include hidden-background-image(); }
+	100% { @include hidden-background-image(); }
 }
